@@ -1,0 +1,11 @@
+location-event-micro-service will take user coordinates sent by the mobiles phones.
+gRPC will create connection because lot of endusers are expected to be sending traffic simultaneously.
+
+Kafka cluster pickup receiving this location messages that will be received by location-processor-micro-service
+so it can be maintained to Postgres DB.
+
+
+person SVC is a RESTFul API service responsible for persisting enduser information.
+location SVC handles fronted using a RESTFul API.
+
+person microservice send messages to the location microservice when a request to find out possible connection is done.

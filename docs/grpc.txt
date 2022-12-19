@@ -1,0 +1,15 @@
+The gRPC documentation for LocationService.
+when the grpc client is run then you can send coordinates to grpc
+The request has a payload with id and more as followingg
+syntax = "proto3";
+
+```
+message LocationMessage {
+  int32 userId = 1;
+  int32 latitude = 2;
+  int32 longitude = 3;
+}
+
+service LocationService {
+  rpc Create(LocationMessage) returns (LocationMessage);
+}

@@ -9,7 +9,7 @@ spec:
   - name: "5001"
     port: 5001
     targetPort: 5001
-    nodePort: 30050
+    nodePort: 30051
   - name: "5005"
     port: 5005
     targetPort: 5005

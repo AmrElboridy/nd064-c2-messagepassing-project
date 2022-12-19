@@ -1,3 +1,4 @@
+UdaConnect  contains the following  micro-sevices:
 location-event-micro-service will take user coordinates sent by the mobiles phones.
 gRPC will create connection because lot of endusers are expected to be sending traffic simultaneously.
 

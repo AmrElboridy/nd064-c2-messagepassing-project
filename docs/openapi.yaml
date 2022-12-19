@@ -1,0 +1,76 @@
+{
+   "swagger": "2.0",
+   "basePath": "/",
+   "paths": {
+      "/api/persons": {
+         "get": {
+            "responses": {
+               "200": {
+                  "description": "Success"
+               }
+            },
+            "operationId": "get_persons_resource",
+            "tags": [
+               "UdaConnect"
+            ]
+         },
+         "post": {
+            "responses": {
+               "200": {
+                  "description": "Success"
+               }
+            },
+            "operationId": "post_persons_resource",
+            "tags": [
+               "UdaConnect"
+            ]
+         }
+      },
+      "/api/persons/{person_id}": {
+         "parameters": [
+            {
+               "in": "path",
+               "description": "Person Unique identifier",
+               "name": "person_id",
+               "required": true,
+               "type": "string"
+            }
+         ],
+         "get": {
+            "responses": {
+               "200": {
+                  "description": "Success"
+               }
+            },
+            "operationId": "get_person_resource",
+            "tags": [
+               "UdaConnect"
+            ]
+         }
+      }
+   },
+   "info": {
+      "title": "Person API",
+      "version": "0.0.1"
+   },
+   "produces": [
+      "application/json"
+   ],
+   "consumes": [
+      "application/json"
+   ],
+   "tags": [
+      {
+         "name": "UdaConnects",
+         "description": "Professionals Connections using Geolocation."
+      }
+   ],
+   "responses": {
+      "ParseError": {
+         "description": "mask can't be parsed"
+      },
+      "MaskError": {
+         "description": "error occurs on mask"
+      }
+   }
+}

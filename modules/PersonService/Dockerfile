@@ -4,7 +4,7 @@ WORKDIR .
 
 RUN apk add --no-cache build-base gcc musl-dev linux-headers geos libc-dev postgresql-dev
 
-COPY ./modules/PersonService .
+COPY . .
 
 RUN pip3 install -r requirements.txt
 

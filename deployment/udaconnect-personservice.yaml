@@ -35,7 +35,7 @@ spec:
         service: udaconnect-personservice
     spec:
       containers:
-      - image: khalilelf441/udaconnect-personservice:latest
+      - image: amrelboridy/udaconnectpersonservic:latest
         name: uudaconnect-personservice
         imagePullPolicy: Always
         env:

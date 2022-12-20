@@ -31,7 +31,7 @@ spec:
         service: udaconnect-connectionservice
     spec:
       containers:
-      - image: khalilelf441/udaconnect-connectionservice:latest
+      - image: amrelboridy/udaconnect-connectionservice:latest
         name: udaconnect-connectionservice
         imagePullPolicy: Always
         env:

@@ -31,7 +31,7 @@ spec:
         service: udaconnect-locationservice
     spec:
       containers:
-      - image: khalilelf441/udaconnect-locationservice:latest
+      - image: amrelboridy/udaconnect-locationservice:latest
         name: udaconnect-locationservice
         imagePullPolicy: Always
         env:

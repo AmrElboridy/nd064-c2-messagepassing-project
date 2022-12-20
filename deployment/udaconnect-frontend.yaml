@@ -31,7 +31,7 @@ spec:
         service: udaconnect-frontend
     spec:
       containers:
-      - image: khalilelf441/udaconnect-frontend:latest
+      - image: amrelboridy/udaconnect-frontend:latest
         name: udaconnect-frontend
         imagePullPolicy: Always
         resources:
